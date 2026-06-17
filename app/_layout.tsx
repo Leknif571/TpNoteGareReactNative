@@ -17,6 +17,39 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+        <Stack.Screen 
+        name="journey-result" 
+        options={{ 
+          presentation: 'modal', 
+          headerShown: true,  
+          title: 'Résultat Itinéraire',
+          headerLeft: () => null 
+        }} 
+      />
+      <Stack.Screen 
+        name="specificline" 
+        options={{ 
+          presentation: 'modal', 
+          headerShown: true,  
+          title: 'Ligne détail',
+        }} 
+      />
+      <Stack.Screen 
+        name="specificstation" 
+        options={{ 
+          presentation: 'modal', 
+          headerShown: true,  
+          title: 'Détail station',
+        }} 
+      />
+      <Stack.Screen 
+        name="auth" 
+        options={{ 
+          presentation: 'modal', 
+          headerShown: true,  
+          title: 'Authentification',
+        }} 
+      />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
